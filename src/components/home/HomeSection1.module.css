@@ -1,0 +1,161 @@
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 0 0;
+  background: #ffffff;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* small dot on top */
+.heroDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 0 auto 3rem;
+}
+
+.heroContent {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.heroContent.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heroTitle {
+  font-size: clamp(2.8rem, 4.6vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 2rem;
+}
+
+.titleLine {
+  display: block;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #111;
+  font-weight: 500;
+}
+
+/* Banner */
+
+.bannerWrapper {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.bannerTrack {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: bannerLeftToRight 18s linear infinite;
+  padding: 1.3rem 0;
+}
+
+.bannerItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  white-space: nowrap;
+  margin-right: 4rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+.rotatingIcon {
+  width: 42px;
+  height: 42px;
+  animation: rotateIconRight 4s linear infinite;
+}
+
+/* banner moves from left side to right side */
+@keyframes bannerLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* clockwise rotation */
+@keyframes rotateIconRight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* responsive tweaks */
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 4rem 0 0;
+  }
+
+  .heroContent {
+    padding: 0 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(2.2rem, 7vw, 3.1rem);
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+  }
+
+  .bannerItem {
+    font-size: 1.8rem;
+    margin-right: 2.5rem;
+    gap: 1rem;
+  }
+
+  .rotatingIcon {
+    width: 32px;
+    height: 32px;
+  }
+  .hero {
+  min-height: 70vh;
+  
+}
+}
+
+@media (max-width: 480px) {
+  .heroContent {
+    padding: 0 1.25rem;
+  }
+
+  .bannerItem {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+
+  .hero {
+  min-height: 60vh;
+  
+}
+}

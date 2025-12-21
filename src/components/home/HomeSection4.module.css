@@ -1,0 +1,104 @@
+.section {
+  width: 100%;
+  background: #ffffff;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+/* common row container */
+.logos {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+/* soft fade at left/right */
+.logos::before,
+.logos::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+/* first row: right -> left */
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* second row: left -> right */
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 30s slideLeft linear infinite;
+}
+
+/* second row override */
+.logo_items_reverse {
+  animation: 30s slideRight linear infinite;
+}
+
+/* pause both rows on hover */
+.logos:hover .logo_items,
+.logos:hover .logo_items_reverse {
+  animation-play-state: paused;
+}
+
+/* logo visuals */
+.logo_items img {
+  height: 34px;
+  margin: 0 32px;
+  display: inline-block;
+  filter: brightness(0) saturate(100%);
+}
+
+/* optional hook if you want to tweak row 2 later */
+.logosReverse {
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+    gap: 12px;
+  }
+
+  .logos::before,
+  .logos::after {
+    width: 96px;
+  }
+
+  .logo_items img {
+    height: 48px;
+    margin: 0 20px;
+  }
+}
