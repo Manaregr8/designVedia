@@ -168,7 +168,7 @@
   height: 34px;
   margin: 0 32px;
   display: inline-block;
-  filter: brightness(0) saturate(100%);
+  /* filter: brightness(0) saturate(100%); */
 }
 
 /* optional hook if you want to tweak row 2 later */

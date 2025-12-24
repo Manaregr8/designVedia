@@ -12,8 +12,8 @@ const logos = [
   'https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg',
   'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg',
   'https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg',
-  'https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png',
-  'https://upload.wikimedia.org/wikipedia/commons/c/c9/Intel-logo.svg'
+  'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg',
+  'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg',
 ];
 
 const HomeSection4 = () => {
