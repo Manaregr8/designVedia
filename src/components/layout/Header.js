@@ -27,7 +27,7 @@ const Header = () => {
     <>
       <div className={styles.announcementBar}>
         <span className={styles.emoji}>🎉</span>
-        <span>AddKit is now part of the Schbang Network. </span>
+        <span>Designing Vedia Presents Exclusive Offers for a Limited Time. </span>
         <a href="#" className={styles.readMore}>Read More Here</a>
       </div>
       

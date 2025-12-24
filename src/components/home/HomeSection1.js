@@ -24,17 +24,21 @@ const HomeSection1 = () => {
         >
           <h1 className={styles.heroTitle}>
             <span className={styles.titleLine}>
-              Your Creative, Media &amp; Technology
+              Build a Career in Creativity
             </span>
             <span className={styles.titleLine}>
-              Transformation Partner
+              Beyond Skills
             </span>
           </h1>
 
           <p className={styles.heroDescription}>
-            We&apos;re a team of 1200+ specialists delivering award‑winning work
-            for 350+ brands worldwide, 10 years and counting!
+           Trusted by 25,000+ aspiring creators. We don’t just teach software. We mentor you 
+through real projects, portfolios, and career paths that actually get you hired.
           </p>
+          <div className={styles.heroCTAWrapper}>
+            <button className={styles.ctaPrimary}>Explore Courses</button>
+            <button className={styles.ctaSecondary}>Get Free Guidance</button>
+          </div>
         </div>
       </div>
 
@@ -47,7 +51,7 @@ const HomeSection1 = () => {
               alt=""
               className={styles.rotatingIcon}
             />
-            <span>IT&apos;S TIME TO CREATE A SCHBANG</span>
+            <span>ANIMATION</span>
           </div>
 
           <div className={styles.bannerItem}>
@@ -56,7 +60,7 @@ const HomeSection1 = () => {
               alt=""
               className={styles.rotatingIcon}
             />
-            <span>IT&apos;S TIME TO CREATE A SCHBANG</span>
+            <span>VFX</span>
           </div>
 
           <div className={styles.bannerItem}>
@@ -65,7 +69,7 @@ const HomeSection1 = () => {
               alt=""
               className={styles.rotatingIcon}
             />
-            <span>IT&apos;S TIME TO CREATE A SCHBANG</span>
+            <span>Motion Graphics</span>
           </div>
 
           {/* duplicate for seamless loop */}
@@ -75,7 +79,7 @@ const HomeSection1 = () => {
               alt=""
               className={styles.rotatingIcon}
             />
-            <span>IT&apos;S TIME TO CREATE A SCHBANG</span>
+            <span>GRAPHICS DESIGNING</span>
           </div>
 
           <div className={styles.bannerItem}>
@@ -84,7 +88,33 @@ const HomeSection1 = () => {
               alt=""
               className={styles.rotatingIcon}
             />
-            <span>IT&apos;S TIME TO CREATE A SCHBANG</span>
+            <span>VIDEO EDITING</span>
+          </div>
+          <div className={styles.bannerItem}>
+            <img
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/649531f111407d44a30fb06a_download1.avif"
+              alt=""
+              className={styles.rotatingIcon}
+            />
+            <span>ANIMATION</span>
+          </div>
+
+          <div className={styles.bannerItem}>
+            <img
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/649531f111407d44a30fb06a_download1.avif"
+              alt=""
+              className={styles.rotatingIcon}
+            />
+            <span>VFX</span>
+          </div>
+
+          <div className={styles.bannerItem}>
+            <img
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/649531f111407d44a30fb06a_download1.avif"
+              alt=""
+              className={styles.rotatingIcon}
+            />
+            <span>Motion Graphics</span>
           </div>
         </div>
       </div>

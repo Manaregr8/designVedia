@@ -8,7 +8,7 @@ const Footer = () => {
         <div className={styles.footerTop}>
           <div className={styles.footerColumn}>
             <div className={styles.logo}>
-              <span className={styles.logoText}>Schbang</span>
+              <span className={styles.logoText}>DESIGNING VEDIA</span>
               <span className={styles.logoDivider}></span>
               <span className={styles.logoSubtitle}>IT Talent Management</span>
             </div>

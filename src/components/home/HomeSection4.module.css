@@ -1,7 +1,97 @@
+@media (max-width: 1024px) {
+  .headerBlock {
+    max-width: 98vw;
+    margin: 48px auto 32px auto;
+  }
+  .sectionHeadline {
+    font-size: 2rem;
+  }
+  .sectionSubtext {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .headerBlock {
+    max-width: 100vw;
+    margin: 32px auto 24px auto;
+    padding: 0 8px;
+  }
+  .sectionHeadline {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+  }
+  .sectionSubtext {
+    font-size: 0.98rem;
+    margin-bottom: 14px;
+  }
+  .logoContextLine {
+    font-size: 0.92rem;
+  }
+  .logo_items img {
+    height: 32px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerBlock {
+    margin: 18px auto 12px auto;
+    padding: 0 2vw;
+  }
+  .sectionHeadline {
+    font-size: 1.08rem;
+    margin-bottom: 8px;
+  }
+  .sectionSubtext {
+    font-size: 0.92rem;
+    margin-bottom: 10px;
+  }
+  .logoContextLine {
+    font-size: 0.85rem;
+  }
+  .logo_items img {
+    height: 22px;
+    margin: 0 5px;
+  }
+}
+/* Header Block Styles */
+.headerBlock {
+  max-width: 810px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionHeadline {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #1a202c;
+  letter-spacing: -1px;
+}
+
+.sectionSubtext {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 22px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.logoContextLine {
+  font-size: 1rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 0;
+  letter-spacing: 0.2px;
+}
 .section {
   width: 100%;
   background: #ffffff;
-  padding: 56px 0;
+  padding: 100px 0 56px 0;
   display: flex;
   flex-direction: column;
   gap: 1px;
@@ -78,7 +168,7 @@
   height: 34px;
   margin: 0 32px;
   display: inline-block;
-  filter: brightness(0) saturate(100%);
+  /* filter: brightness(0) saturate(100%); */
 }
 
 /* optional hook if you want to tweak row 2 later */

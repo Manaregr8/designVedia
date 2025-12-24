@@ -1,8 +1,29 @@
+/* Section Headline and Subtext */
+.sectionHeader {
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+}
+.sectionHeadline {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+  color: #1a202c;
+  letter-spacing: -1px;
+}
+.sectionSubtext {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
 .section {
   position: relative;
   background: #ffffff;
   color: #000000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding: 56px 0;
 }
 
 .label {
@@ -146,11 +167,12 @@
 }
 
 .overline {
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
-  opacity: 0.85;
+  font-weight: 900;
+  /* opacity: 0.85; */
 }
 
 .courseTitle {
@@ -189,49 +211,128 @@
   background: #000000;
   color: #ffffff;
 }
-
-@media (max-width: 600px) {
+/* Tablet view - 2 cards per row */
+@media (max-width: 1024px) {
+  .sectionHeader {
+    padding: 0 20px;
+    margin-bottom: 2rem;
+  }
+  
   .label {
     display: none;
   }
 
   .slider {
     position: static;
-    flex-wrap: wrap;
-    gap: 50px 30px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     height: auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     opacity: 1;
     width: 100%;
+    height: 400px;
     clip-path: none !important;
+    border-radius: 12px;
+    overflow: hidden;
   }
 
-  .link,
   .link img {
     clip-path: none !important;
-  }
-
-  .link img {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
+    filter: brightness(0.7);
   }
 
   .linkContent {
-    position: static;
+    position: absolute;
     opacity: 1;
     transform: none;
-    background: #000;
-    color: #fff;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.3),
+      transparent
+    );
   }
 
   .courseDescription {
     max-width: none;
+  }
+}
+
+/* Mobile view - 1 card per row */
+@media (max-width: 600px) {
+  .sectionHeader {
+    padding: 0 16px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sectionHeadline {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sectionSubtext {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .label {
+    display: none;
+  }
+
+  .slider {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    height: auto;
+    padding: 0 16px;
+  }
+
+  .link {
+    opacity: 1;
+    width: 100%;
+    height: 380px;
+    clip-path: none !important;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .link img {
+    clip-path: none !important;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    filter: brightness(0.7);
+  }
+
+  .linkContent {
+    position: absolute;
+    opacity: 1;
+    transform: none;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.3),
+      transparent
+    );
+    padding: 2rem 1.5rem;
+  }
+
+  .courseTitle {
+    font-size: 1.4rem;
+  }
+
+  .courseDescription {
+    max-width: none;
+    font-size: 0.9rem;
   }
 }

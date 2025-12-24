@@ -6,57 +6,51 @@ import styles from "./HomeSection8.module.css";
 const testimonials = [
   {
     author: {
-      name: "Emma Thompson",
-      handle: "@emmaai",
-      avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+      name: "Aarav Sharma",
+      handle: "Graphic Designer at Creative Studio, Mumbai",
+      avatar: "https://randomuser.me/api/portraits/men/65.jpg",
     },
-    text: "Using this AI platform has transformed how we handle data analysis. The speed and accuracy are unprecedented.",
+    text: "After completing the Graphic Design course, I landed my dream job at a top Mumbai studio. The hands-on projects made all the difference!",
   },
   {
     author: {
-      name: "David Park",
-      handle: "@davidtech",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      name: "Priya Singh",
+      handle: "Freelance UI/UX Designer, Bengaluru",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     },
-    text: "The API integration is flawless. We've reduced our development time by 60% since implementing this solution.",
+    text: "The UI/UX program gave me the skills and confidence to start freelancing. Now I work with clients across India!",
   },
   {
     author: {
-      name: "Sofia Rodriguez",
-      handle: "@sofiaml",
-      avatar:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
+      name: "Rohan Patel",
+      handle: "Senior Motion Graphics Artist, Ahmedabad",
+      avatar: "https://randomuser.me/api/portraits/men/43.jpg",
     },
-    text: "Finally, an AI tool that actually understands context! The accuracy in natural language processing is impressive.",
+    text: "Learning motion graphics here helped me get promoted and lead bigger projects at my agency.",
   },
   {
     author: {
-      name: "Michael Chen",
-      handle: "@mikedev",
-      avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+      name: "Sneha Iyer",
+      handle: "Web Developer at Tech Startup, Pune",
+      avatar: "https://randomuser.me/api/portraits/women/68.jpg",
     },
-    text: "The customer support is outstanding. Every question is answered promptly and thoroughly.",
+    text: "The web development course was practical and up-to-date. I got placed at a Pune startup right after graduating!",
   },
   {
     author: {
-      name: "Lisa Anderson",
-      handle: "@lisadesigns",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      name: "Vikram Desai",
+      handle: "Freelance Digital Marketer, Delhi",
+      avatar: "https://randomuser.me/api/portraits/men/23.jpg",
     },
-    text: "As a designer, I appreciate the intuitive interface and beautiful UI. It makes complex tasks feel simple.",
+    text: "I now run my own digital marketing business and consult for brands across Delhi. The mentorship was invaluable.",
   },
   {
     author: {
-      name: "James Wilson",
-      handle: "@jamescode",
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      name: "Ananya Joshi",
+      handle: "Founder, Joshi Photography Studio, Surat",
+      avatar: "https://randomuser.me/api/portraits/women/12.jpg",
     },
-    text: "Best investment we've made this year. ROI was visible within the first month of implementation.",
+    text: "The photography course gave me the confidence to start my own studio. My skills and business have grown so much!",
   },
 ];
 
@@ -82,9 +76,10 @@ const HomeSection8 = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Trusted by developers worldwide</h2>
+          <h2 className={styles.title}>Real Career Progress.</h2>
           <p className={styles.description}>
-            Join thousands of developers who are already building the future with our AI platform
+            Hear directly from learners who transformed their creative skills into real opportunities 
+with Designing Vidya
           </p>
         </div>
 

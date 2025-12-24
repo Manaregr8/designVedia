@@ -51,7 +51,7 @@ const HomeSectionVedio = () => {
       <div className={styles.videoWrap}>
         <video
           className={styles.video}
-          src="https://www.pexels.com/download/video/34464845/"
+          src="/uploads/Untitled design (6).mp4"
           autoPlay
           muted
           loop

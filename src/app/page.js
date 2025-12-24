@@ -53,7 +53,7 @@ export default function Home() {
           <HomeSection3 />
           <HomeSection4 />
           <HomeSection5 />
-          <HomeSection6 />
+          {/* <HomeSection6 /> */}
           <HomeSection7 />
         </main>
       )}

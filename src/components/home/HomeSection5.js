@@ -6,16 +6,16 @@ import useScrollAnimation from "@/lib/useScrollAnimation";
 
 const HIGHLIGHTS = [
   {
-    title: "Innovation at the core",
-    text: "We blend strategy, design and technology to solve modern business problems.",
+    title: "Industry-relevant learning",
+    text: "Our curriculum is aligned with real creative workflows used across media, design, and production.",
   },
   {
-    title: "Learner‑first mindset",
-    text: "Every experience is crafted around clarity, confidence and real‑world impact.",
+    title: "Learner-first mentorship",
+    text: "Small batches, personal guidance, and continuous feedback to help you grow faster and smarter.",
   },
   {
-    title: " measurable outcomes",
-    text: "From first brief to final hand‑off, we track what actually moves the needle.",
+    title: "Outcome-driven approach",
+    text: "We focus on skills, portfolios, and career readiness — not just course completion.",
   },
 ];
 
@@ -30,24 +30,19 @@ const HomeSection5 = () => {
           <div
             className={`${styles.textCol} ${isVisible ? styles.visible : ""}`}
           >
-            <span className={styles.kicker}>About Designing Vidya</span>
+
+            <span className={styles.kicker}>ABOUT DESIGNING VIDYA</span>
 
             <h2 className={styles.title}>
-              Where strategy
-              <br />
-              meets creative learning.
+              Where Learning Meets Real Creative Careers
             </h2>
 
             <p className={styles.lead}>
-              Designing Vidya helps learners and brands speak the language of
-              design, communication and global opportunities with confidence.
+              Designing Vidya is a career-focused creative institute built for learners who want clarity, confidence, and real-world skills. We help aspiring creators turn their interest in design, media, and technology into professional opportunities.
             </p>
 
             <p className={styles.body}>
-              From foundational skills to advanced storytelling, our programs
-              are built to be practical, industry‑aligned and deeply human. A
-              focused mix of mentors, projects and feedback helps you grow
-              faster, with clarity and direction.
+              From foundational skills to advanced execution, our programs are designed around practical learning, mentorship, and industry expectations. Every course focuses on building portfolios, confidence, and direction — so you’re prepared for what comes next.
             </p>
 
             <div className={styles.highlights}>
@@ -63,7 +58,7 @@ const HomeSection5 = () => {
             </div>
 
             <button className={styles.cta}>
-              Learn more about us
+              Learn More About Our Approach &rarr;
             </button>
           </div>
 
